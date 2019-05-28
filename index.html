@@ -27,18 +27,16 @@
 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <link rel="stylesheet" href="https://cdn.fluidplayer.com/v2/current/fluidplayer.min.css" type="text/css"/>
+<script src="https://cdn.fluidplayer.com/v2/current/fluidplayer.min.js"></script>
 </head>
 
 <body>
   <h1 class="text-center landing-title" style="color:rgb(255, 0, 0);">Learn to Change Your Penis Size and Hardness with this Bestselling VIDEO</h1>
 
-  <div class="video">
-    <div class="videoWrapper">
-      <!-- Insertar video Incio -->
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/PEuppw2GsJ4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <!-- Insertar video Fin -->
-    </div>
-  </div>
+  <div class="video" style="text-align: center;" >
+    <video id="video-id" style="width: 854px; height: 420px;"> <source src="AGRANDARPENE.mp4" type="video/mp4"/> </video>
+  </div> 
   <section>
     <h2 class="text-center landing-subtitle h4" style="color:rgb(252, 175, 9);">FINALLY! Adult Movie Star Aaron Wilcoxx Reveals The Industry Secret To Achieving World-Class LENGTHEN THE PENIS</h2>
 <!--     <div class="text-center">
@@ -71,13 +69,12 @@
       Beneficios 4
     </p> -->
 
-    <p class="beneficio text-center" style="color:white;
-          background-color:#2ecc39;
-    ">
-      Price 9.99$
-    </p> 
     <div class="text-center buy-button">
-      <a href="https://payhip.com/b/esYU" class="payhip-buy-button" data-theme="none" data-product="esYU"><img src="buy-button.gif" alt="buy boton"></a> 
+      <a href="https://payhip.com/b/esYU" class="payhip-buy-button" data-theme="none" data-product="esYU">
+        <img src="buy-button.gif" alt="buy boton">
+        <p class="beneficio text-center" style="color:white; background-color:#2ecc39; width: 50%;
+        margin: auto; "> Price 9.99$</p> 
+      </a> 
     </div>
 
   </section>
@@ -432,6 +429,14 @@
   </div>
 
   <script src="main.js"></script>
+  <script> fluidPlayer("video-id",{
+      layoutControls: {
+          primaryColor:      '#2ecc39',
+          playButtonShowing:      true,
+          playPauseAnimation:     true,
+          autoPlay:               true,
+      }
+  }); </script>
 </body>
 
 </html>
